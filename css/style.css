@@ -219,6 +219,7 @@ main{
     align-items: center;
     gap: 5px;
     margin-top: 16px;
+    position: relative;
 }
 
 .plans_cards img{
@@ -226,10 +227,35 @@ main{
     height: 20px;
 }
 
-#dropdown_cards a{
+#dropdown_cards span{
     font-size: 0.85rem;
     text-decoration-line: underline;
     color: var(--primary-color);
+}
+
+.cards_container{
+    width: 140px;
+    background: var(--white-color);
+    border-radius: 8px;
+    position: absolute;
+    left: 51.7%;
+    top: 130%;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    padding: 8px 4px;
+    box-shadow: rgba(0, 0, 0, 0.226) 1px 0 12px 0;
+}
+
+.cards_container ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.cards_container{
+    display: none;
 }
 
 .plans_tables{
