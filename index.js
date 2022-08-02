@@ -1,11 +1,11 @@
-let navList = document.getElementById('navbar')
+var navList = document.getElementById('navbar')
 
 function openBtn(){
     navList.style.right = '0'
 }
 
 function closeBtn(){
-    navList.style.left = '-290px'
+    navList.style.right = '-290px'
 }
 
 const el = document.getElementById('dropdownspan')

@@ -30,6 +30,7 @@ header{
 
 nav ul{
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -69,6 +70,12 @@ nav ul li a:hover{
 
 #list_logo{
     display: none;
+}
+
+.vertical_line{
+    width: 1px;
+    height: 16px;
+    background: var(--white-color);
 }
 
 /* ======== 1 MÊS GRÁTIS ======== */
@@ -766,6 +773,13 @@ footer .logo img{
     padding: 12px 32px;
     border-radius: 30px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.233) 0px 2px 8px 0;
+    transition: .2s;
+}
+
+.download_btn:hover{
+    transform: scale(1.1);
+    background: #eeeeee;
 }
 
 .download_btn a{
@@ -916,6 +930,7 @@ footer .logo img{
         background: var(--primary-color);
         display: flex;
         flex-direction: column;
+        align-items: stretch;
         position: fixed;
         right: -290px;
         top: 0;
@@ -927,6 +942,11 @@ footer .logo img{
 
     nav ul li a{
         font-size: 1.4rem;
+    }
+
+    .vertical_line{
+        transform: rotate(90deg);
+        margin-left: 10px;
     }
 
     .premium_image__list ul{
