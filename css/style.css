@@ -196,7 +196,7 @@ main{
 }
 
 .plans_container{
-    padding: 60px 15px;
+    padding: 80px 15px;
 }
 
 .plans_title{
@@ -710,6 +710,144 @@ footer .logo img{
     transform: scale(1.1);
 }
 
+/* ====== DOWNLOAD PAGE ====== */
+
+.download_container{
+    width: 100%;
+    background: rgb(25 230 140);
+}
+
+.download_content{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.download_images{
+    position: relative;
+    overflow: hidden;
+    margin: 64px 0 40px 0;
+}
+
+.download_images img:nth-child(1){
+    width: 9rem;
+}
+
+.download_images img:nth-child(2){
+    position: absolute;
+    left: 52px;
+    top: 20px;
+    width: 2.5rem;
+}
+
+.download_images img:nth-child(3){
+    position: absolute;
+    left: 65px;
+    top: 35px;
+    width: .8rem;
+}
+
+.download_texts h1{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.download_texts p{
+    margin-bottom: 32px;
+}
+
+.download_btn{
+    background: var(--white-color);
+    padding: 12px 32px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.download_btn a{
+    color: var(--primary-color);
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.store_content{
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 15px;
+}
+
+.store_content h1{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+
+.companies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .9rem;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.companies img{
+    height: 40px;
+}
+
+.companies img:nth-child(2){
+    height: 59px;
+}
+
+.list_download{
+    width: 100%;
+    background: rgb(34 35 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_content{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 70px 15px 50px;
+    text-align: center;
+}
+
+.list_content img{
+    width: 50%;
+}
+
+.list_content h1{
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-top: 10px;
+}
+
+.list_container ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .9rem;
+    margin-top: 2rem;
+    padding: 20px 0;
+}
+
+.list_container ul li{
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.list_container ul li a{
+    color: var(--hover-color);
+    text-decoration-line: underline;
+}
+
 /* ====== MEDIA QUERIES ====== */
 
 @media screen and (max-width: 1180px) {
@@ -874,10 +1012,38 @@ footer .logo img{
     .community_texts p{
         font-size: .9rem;
     }
+
+    /* ========== DOWNLOAD =========== */
+
+    .download_images{
+        margin: 64px 0 30px 0;
+    }
+
+    .download_content{
+        padding: 3.5rem 2rem;
+    }
+
+    .download_texts h1{
+        font-size: 2.5rem;
+        padding-bottom: 15px;
+        line-height: 1.1;
+    }
+
+    .list_container ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .list_content h1{
+        font-size: 1.5rem;
+    }
+
+    .list_content img{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 620px) {
-
     .categories_suporte{
         grid-template-columns: 1fr 1fr;
     }
