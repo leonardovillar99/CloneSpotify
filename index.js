@@ -20,3 +20,9 @@ el.addEventListener('mouseover', function handleMouseOver(){
 el.addEventListener('mouseout', function handleMouseOut() {
     cardBox.style.display = 'none';
 })
+
+// Change Border Color
+
+/*function changeBorderColor(){
+    document.getElementById('email').style.border = '2px solid black'
+}*/

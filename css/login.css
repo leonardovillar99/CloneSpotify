@@ -1,0 +1,264 @@
+.header_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.24);
+    margin-bottom: 30px;
+}
+
+.header_container svg{
+    width: 190px;
+    padding: 25px 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_title span{
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.header_buttons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+#facebook_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    width: 450px;
+    background: #405a93;
+    border-radius: 30px;
+}
+
+#facebook_btn a{
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: .9rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+#facebook_btn i{
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+#apple_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    width: 450px;
+    background: var(--primary-color);
+    border-radius: 30px;
+}
+
+#apple_btn a{
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: .9rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+#apple_btn i{
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+#google_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    width: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    background: transparent;
+    border-radius: 30px;
+}
+
+#google_btn a{
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: .9rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+#google_btn i{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.divisors{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.divisors span{
+    color: rgb(127 127 127);
+    font-size: .9rem;
+}
+
+.divisor{
+    width: 195px;
+    height: 1px;
+    background: rgb(127 127 127);
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 20px;
+}
+
+.form_group label{
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.form_group input{
+    width: 450px;
+    height: 50px;
+    padding: 0 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+}
+
+.form_group a{
+    font-size: .85rem;
+    padding-top: 5px;
+    color: var(--primary-color);
+}
+
+.checkbox_btn{
+    padding-top: 5px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.233);
+    padding-bottom: 20px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkbox input:checked{
+    background-color: var(--hover-color);
+}
+
+.checkbox span{
+    font-size: .85rem;
+    margin-top: 2px;
+}
+
+.btn_login button{
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    border: transparent;
+    background: var(--hover-color);
+    font-size: .95rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in .2s;
+    cursor: pointer;
+}
+
+.btn_login button:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.233) 0px 2px 8px 0;
+}
+
+.no_account{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.no_account a{
+    display: block;
+    margin-top: 20px;
+    width: 450px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 30px;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    letter-spacing: .8px;
+    transition: .2s;
+}
+
+.no_account a:hover{
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px){
+    .header_container svg{
+        width: 130px;
+        padding: 15px 0;
+    }
+
+    #facebook_btn, #apple_btn, #google_btn{
+        width: 320px;
+    }
+
+    .divisor{
+        width: 130px;
+    }
+
+    .form_group input{
+        width: 320px;
+    }
+
+    .checkbox_btn{
+        width: 320px;
+    }
+
+    .no_account a{
+        width: 320px;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    #facebook_btn, #apple_btn, #google_btn{
+        width: 290px;
+    }
+
+    .divisor{
+        width: 115px;
+    }
+
+    .form_group input{
+        width: 290px;
+    }
+
+    .checkbox_btn{
+        width: 290px;
+    }
+
+    .no_account a{
+        width: 290px;
+        letter-spacing: 0;
+    }
+}
